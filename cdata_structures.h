@@ -52,4 +52,6 @@ node_t *list_remove_beginning (list_t *);
 
 node_t *list_remove_end (list_t *);
 
+list_t *list_split_string (char *, char);
+
 #endif // CDATA_STRUCTURES_H
