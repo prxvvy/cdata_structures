@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./build && cmake-build-debug/tests/cdata_structures_tests
