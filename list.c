@@ -244,9 +244,13 @@ list_print_list (list_t *p_list, int new_line)
       else if (p_node->value_type == LIST)
         {
           if (idx == list_get_length_list (p_list) - 1)
-            list_print_list (p_list, 0);
+            list_print_list (p_node->p_value, 0);
           else
-            list_print_list (p_list, 0);
+            {
+
+              list_print_list (p_node->p_value, 0);
+              printf (", ");
+            }
         }
       else
         {
